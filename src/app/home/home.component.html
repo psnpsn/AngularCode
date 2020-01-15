@@ -1,3 +1,10 @@
-<p>
-  home works!
-</p>
+<div *ngFor="let prod of products.products">
+    <fieldset>
+    <legend>Product {{prod.id}}</legend>
+    <ul>
+      <li>Price: {{prod.prix}}</li>
+    </ul>
+    <button type="button" *ngIf="prod.prix > 0">Buy</button>
+    <button type="button">Details</button>
+  </fieldset>
+  </div>
