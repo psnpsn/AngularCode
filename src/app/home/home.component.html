@@ -4,7 +4,8 @@
     <ul>
       <li>Price: {{prod.prix}}</li>
     </ul>
-    <button type="button" *ngIf="prod.prix > 0">Buy</button>
-    <button type="button">Details</button>
+    <button type="button" [disabled]="! (prod.prix > 0)" >Buy</button>
+    <button type="button" (click)="details()">Details</button>
+    <app-show-shopping [prod]="prod"></app-show-shopping>
   </fieldset>
   </div>
