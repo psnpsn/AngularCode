@@ -1,0 +1,22 @@
+{
+  
+  "products": [
+    {
+      "name": "JPE11774 UNISEX EYEGLASSES",
+      "prix": "230",
+      "description": "EYEGLASSES",
+      "id": 1    },
+    {
+      "name": "Festive Deer",
+      "prix": "0000",
+      "description": "SUN GLASSES",
+      "id": 2
+    },
+    {
+      "name": "Everfresh Flowers",
+      "prix": "250",
+      "description": "SUN GLASSES",
+      "id": 3
+    }
+  ]
+}

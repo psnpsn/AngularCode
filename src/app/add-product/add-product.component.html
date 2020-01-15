@@ -1,0 +1,23 @@
+<form #formulaire="ngForm">
+  <label for="name"> Name</label>
+  <input name required id="name" type="text"
+         ngModel name="name" class="form-control">
+         <br>
+  <label for="price"> Price</label>
+    <input price required type="number"
+                maxlength="8"
+                minlength="8"
+                ngModel name="price" class="form-control" id="price"
+                pattern="^[0-9]*$">
+                <br>
+  <label for="desc">
+    Description</label>
+  <input desc required  type="text"
+         ngModel name="desc"
+         minlength="8"
+         class="form-control" id="desc">
+         <br>
+  <button [disabled]="!formulaire.valid" (click)="addProduct(formulaire)">
+    Add Product
+  </button>
+</form>
